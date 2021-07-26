@@ -21,7 +21,7 @@ jobs:
       run: npm install -g surge
       
     - name: Deploy
-      run: surge ./ arslan-daim-collab.surge.sh --token ${{secret.SURGE_TOKEN}}
+      run: surge ./ arslan-daim-collab.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
       
     
