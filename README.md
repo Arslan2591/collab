@@ -1,2 +1,2 @@
 # collab
-# <a href="http://arslan-daim-collab.surge.sh/">Index</a>
+# <a href="http://arslan-daim-collab.surge.sh/" target="_blank">Index</a>
