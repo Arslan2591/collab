@@ -1,0 +1,29 @@
+name: Deploy on Surge
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.3.0
+      with:
+        node-version: 14
+      
+    - name: Install Surge
+      run: npm install -g surge
+      
+    - name: Deploy
+      run: surge ./ arslan-daim-collab.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        
+      
+    
+    
+
